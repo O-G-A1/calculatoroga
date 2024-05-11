@@ -1,0 +1,168 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+div.plate{
+    width: 70vw;
+    height: 80vh;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #80c204f5 10%, #df8303 50%, #29272497 100%);
+
+}
+div.calculator{
+    width: 25vw;
+    height: 72vh;
+    margin: 80px auto;
+    border-radius: 5%;
+    background: linear-gradient(to bottom right, #80c204bc 0%, #df8303 50%, #29272497 100%);
+    position: relative;
+    top: 25px;
+    box-shadow: 5px 5px 20px rgba(172, 255, 47, 0.689);
+    animation-name: rotating;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@keyframes rotating {
+    from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+    }
+div.screen{
+    width: 20vw;
+    height: 10vh;
+    background-color: rgb(99, 91, 91);
+    border-radius: 10px;
+    text-align: right;
+    color: white;
+    margin: 0px auto;
+    position: relative;
+    top: 30px;
+}
+div.firstrow div{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 40px;
+    left: 35px;
+    border-radius: 30px;
+    text-align: center;
+}
+div p{
+    position: relative;
+    top: 16px;
+    font-size: x-large;
+    font-weight: 900;
+    color: white;
+
+}
+div.secondrow div{
+    display: inline-block;
+    background-color: rgb(99, 91, 91);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 50px;
+    left: 35px;
+    border-radius: 30px;
+    text-align: center;
+}
+div.thirdrow div{
+    display: inline-block;
+    background-color: rgb(99, 91, 91);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 60px;
+    left: 35px;
+    border-radius: 30px;
+    text-align: center;
+}
+div.fourthrow div{
+    display: inline-block;
+    background-color: rgb(99, 91, 91);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 70px;
+    left: 35px;
+    border-radius: 30px;
+    text-align: center;
+}
+div.lastrow div{
+    display: inline-block;
+    background-color: rgb(99, 91, 91);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 80px;
+    left: 35px;
+    border-radius: 30px;
+    text-align: center;
+}
+div.lastrow div:first-of-type{
+    width: 125px;
+    height: 60px;
+}
+div.animated a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    background-color: #df8303;
+    border-radius: 50%;
+    position: absolute;
+    top: 135px;
+    left: 21%;
+    animation-name: OGA;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: all 1s ease-in-out;
+}
+@keyframes OGA{
+    0%{
+        position: absolute;
+        left: 20%;
+    }
+    30%{
+        background-color: white;
+        position: absolute;
+        left: 50%;
+    }
+    80%{
+        background-color: #80c204f5;
+        position: absolute;
+        left: 80%;
+    }
+}
+div.animated a:hover{
+    background-color: azure;
+}
+div.animated2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 130px;
+    left: 15%;
+    animation-name: OGA;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: all 1s ease-in-out;
+}
